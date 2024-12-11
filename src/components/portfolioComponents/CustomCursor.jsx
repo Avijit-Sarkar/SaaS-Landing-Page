@@ -11,7 +11,6 @@ const CustomCursor = () => {
         let mouseY = 0;
         let lastX = 0;
         let lastY = 0;
-        let isHovered = false;
 
         const onMouseMove = (e) => {
             mouseX = e.clientX;
@@ -32,7 +31,6 @@ const CustomCursor = () => {
         };
 
         const onMouseEnter = () => {
-            isHovered = true;
             if (cursorDot && cursorOutline) {
                 cursorDot.style.width = "12px";
                 cursorDot.style.height = "12px";
